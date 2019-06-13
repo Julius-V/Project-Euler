@@ -1,6 +1,7 @@
 from math import sqrt
 
-def maxPrimeFactor(n):
+
+def max_prime_factor(n):
     p = 2
     largest = None
     while p <= sqrt(n):
@@ -10,4 +11,4 @@ def maxPrimeFactor(n):
         p += 1
     return n if n > 1 else largest
 
-print(maxPrimeFactor(600851475143))
+print(max_prime_factor(600851475143))

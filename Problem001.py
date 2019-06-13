@@ -1,7 +1,7 @@
-def arithmeticProgress(d, N):
+def arith_prog(d, N):
     return d * (N // d) * ((N // d) + 1) / 2
 
-def sumMult3n5(N):
-    return arithmeticProgress(3, N) + arithmeticProgress(5, N) - arithmeticProgress(3 * 5, N);
+def sum_mult_3n5(N):
+    return arith_prog(3, N) + arith_prog(5, N) - arith_prog(3 * 5, N);
 
-print(sumMult3n5(1000))
+print(sum_mult_3n5(1000))
