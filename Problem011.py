@@ -1,8 +1,16 @@
+
+
+# Extracting a (wd-1) digit number from a nc-column with grid g
+# at a specified row (row) and column (col)
 def num_from_grid(g, nc, wd, row, col):
     idx = (row - 1) * nc * wd + (col - 1) * wd
     return int(g[idx:(idx + wd - 1)])
 
 
+# A product in one of the five possible directions dir
+# (left, down-left, down, down-right, right) of n consecutive
+# integers in a grid g with nc columns and with (wd-1)-digit integers
+# separated by space. Starting from a specified row (row) and column (col)
 def grid_prod(g, nc, wd, row, col, n, dir):
     prod = 1
     r_inc = range(row, row + n)
@@ -26,6 +34,8 @@ def grid_prod(g, nc, wd, row, col, n, dir):
     return prod
 
 
+# Finding the largest product of n consecutive (wd-1)-digit integers
+# in a grid of nc columns and nr rows
 def largest_product(g, nr, nc, wd, n):
     largest = 0
     for c in range(1, nc + 1):
@@ -41,6 +51,7 @@ def largest_product(g, nr, nc, wd, n):
             if c <= nc - n + 1:
                 largest = max(largest, grid_prod(g, nc, wd, r, c, n, 5))
     return largest
+
 
 grid = '\
 08 02 22 97 38 15 00 40 00 75 04 05 07 78 52 12 50 77 91 08 \

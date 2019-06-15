@@ -1,6 +1,7 @@
 from math import log, floor
 
 
+# Using the sieve of Sundaram to generate primes up to upper_limit
 def sieve_sundaram(upper_limit):
         sieve_limit = floor((upper_limit - 2) / 2)
         nums = [True] * (sieve_limit + 1)
@@ -16,4 +17,5 @@ def sieve_sundaram(upper_limit):
         return [2 * i + 1 for i in range(0, sieve_limit) if nums[i]]
 
 
+# Summing all the primes up to 2 million and adding 2 as the sieve of Sundaram skips it
 print(sum(sieve_sundaram(2000000)) + 2)

@@ -1,10 +1,12 @@
 from numpy import prod
 
 
+# Product of digits of a number s provided as a string
 def str_prod(s):
     return prod([int(s[i]) for i in range(0, len(s))])
 
 
+# The largest product of n digits in a string of digits s
 def max_subproduct(s, n):
     return max([str_prod(s[i:(i + n)]) for i in range(0, len(s) - n)])
 
