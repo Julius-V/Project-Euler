@@ -24,4 +24,5 @@ def max_path_sum(triangle, width, rows):
 
 
 tri = open('p067_triangle.txt', 'r').read()
+
 print(max_path_sum(tri, 3, 100))
