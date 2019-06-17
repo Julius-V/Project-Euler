@@ -14,7 +14,7 @@ def sieve_sundaram(upper_limit):
                         nums[num] = False
                 else:
                     break
-        return [2 * i + 1 for i in range(0, sieve_limit) if nums[i]]
+        return [2 * i + 1 for i in range(sieve_limit) if nums[i]]
 
 
 # Summing all the primes up to 2 million and adding 2 as the sieve of Sundaram skips it

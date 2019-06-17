@@ -10,7 +10,7 @@ dict = {0: 0, 1: len('one'), 2: len('two'), 3: len('three'), 4: len('four'), 5: 
 
 # The number of letters when n is written out in words
 def num_word_length(n):
-    if n in list(range(0, 20)) + [1000]:
+    if n in list(range(20)) + [1000]:
         return dict[n]
     elif n >= 100:
         s = dict[100] + dict[n // 100]

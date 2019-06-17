@@ -4,7 +4,7 @@ from math import log10, ceil
 # Summing rows of n, where each row consist of a number of m digits
 def sum_rows(n, m):
     s = 0
-    for r in range(0, int(len(n) / m)):
+    for r in range(len(n) // m):
         s += int(n[(r * m):((r + 1) * m)])
     return s
 
