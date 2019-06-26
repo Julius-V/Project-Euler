@@ -1,5 +1,3 @@
-
-
 # Returning the index of the first k-digit Fibonacci number
 def first_fibo_n_digits(k):
     a, b = 0, 1

@@ -1,5 +1,3 @@
-
-
 # Lengths of all Collatz sequences starting from 1, ..., n
 def collatz(n):
     lens = [0] * n

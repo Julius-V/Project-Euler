@@ -1,5 +1,3 @@
-
-
 # nth triangular number
 def nth_trianglar(n):
     return n * (n + 1) // 2

@@ -1,5 +1,3 @@
-
-
 # The total number of rectangles in a mxn grid
 # Sum (m-k+1)(n-l-1) over k=1,...,m and l=1,...n to get the following
 def sum_grid_rectangles(m, n):
