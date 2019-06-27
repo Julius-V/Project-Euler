@@ -3,7 +3,7 @@ from math import factorial
 
 # Finding the nth lexicographic permutation of 0, 1, ..., 9
 def nth_lexi_permutation(n):
-    nums = list(range(0, 10))
+    nums = list(range(10))
     k = ''
     for i in range(10):
         prod = factorial(9 - i)
