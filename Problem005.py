@@ -3,9 +3,9 @@ def lcm(a, b):
     m, n = a, b
     while m != n:
         if m > n:
-            n = n + b
+            n += b
         else:
-            m = m + a
+            m += a
     return m
 
 

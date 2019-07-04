@@ -6,7 +6,7 @@ def max_prime_factor(n):
     while p * p <= n:
         # If found one, keep dividing n by p until they become coprime
         while n % p == 0:
-            n /= p
+            n //= p
             largest = p
         p += 1
     # If n > 1, it must be that p * p > n = prime_number * 1
