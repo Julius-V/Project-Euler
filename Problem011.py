@@ -11,24 +11,24 @@ def num_from_grid(g, nc, wd, row, col):
 # (left, down-left, down, down-right, right) of n consecutive
 # integers in a grid g with nc columns and with (wd-1)-digit integers
 # separated by space. Starting from a specified row (row) and column (col)
-def grid_prod(g, nc, wd, row, col, n, dir):
+def grid_prod(g, nc, wd, row, col, n, direction):
     prod = 1
     r_inc = range(row, row + n)
     c_dec = range(col, col - n, -1)
     c_inc = range(col, col + n)
-    if dir == 1:
+    if direction == 1:
         for c in c_dec:
             prod *= num_from_grid(g, nc, wd, row, c)
-    elif dir == 2:
+    elif direction == 2:
         for r, c in zip(r_inc, c_dec):
             prod *= num_from_grid(g, nc, wd, r, c)
-    elif dir == 3:
+    elif direction == 3:
         for r in r_inc:
             prod *= num_from_grid(g, nc, wd, r, col)
-    elif dir == 4:
+    elif direction == 4:
         for r, c in zip(r_inc, c_inc):
             prod *= num_from_grid(g, nc, wd, r, c)
-    elif dir == 5:
+    elif direction == 5:
         for c in c_inc:
             prod *= num_from_grid(g, nc, wd, row, c)
     return prod
