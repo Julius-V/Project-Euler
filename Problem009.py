@@ -12,7 +12,7 @@ def special_triplet(d):
                 y = r + t
                 z = r + s + t
                 if x + y + z == d:
-                    return x * y * z
+                    return int(x * y * z)
 
 
 print(special_triplet(1000))
