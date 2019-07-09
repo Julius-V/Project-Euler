@@ -17,7 +17,7 @@ def divisors(n):
 # The smallest triangular number >= k
 def next_triangular(k):
     n = ceil(sqrt(1 + 8 * k) / 2 - 1 / 2)
-    return n * (n + 1) / 2
+    return n * (n + 1) // 2
 
 
 # The smallest triangular number with 500 or more divisors
