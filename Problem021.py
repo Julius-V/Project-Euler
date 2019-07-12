@@ -18,7 +18,6 @@ def sum_amicable(m):
     for i in range(2, m):
         a = sum_pdivisors(i)
         if (a > i) & (sum_pdivisors(a) == i):
-            print(i, a)
             s += i + a
     return s
 
