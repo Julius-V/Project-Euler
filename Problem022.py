@@ -12,7 +12,8 @@ def sum_word_scores(words):
 
 
 # Loading names
-names = open('p022_names.txt', 'r').read()
+with open('p022_names.txt') as f:
+    names = f.read()
 # Removing quotation marks
 names = re.sub('"', "", names)
 # Splitting into a list
