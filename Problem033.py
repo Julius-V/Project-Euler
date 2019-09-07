@@ -1,7 +1,6 @@
 # Finding all digit cancelling fractions
 def digit_cancelling_fractions():
-    o_a = 1
-    o_b = 1
+    o_a = o_b = 1
     for a in range(1, 10):
         for b in range(a + 1, 10):
             for c in range(1, 10):
