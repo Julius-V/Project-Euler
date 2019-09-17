@@ -14,7 +14,8 @@ def recover_pass_code(data):
 
 
 # Loading log-ins
-log_ins = open('p079_keylog.txt', 'r').read()
+with open('p079_keylog.txt') as f:
+    log_ins = f.read()
 # Splitting into a list
 log_ins = log_ins.split('\n')
 print(recover_pass_code(log_ins))
