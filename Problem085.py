@@ -8,8 +8,7 @@ def sum_grid_rectangles(m, n):
 
 # Finding the area of the grid with the number of rectangles closest to 'target'
 def nearest_grid(target):
-    best_score = 0
-    best_area = 0
+    best_score = best_area = 0
     for m in range(100):
         for n in range(100):
             if abs(sum_grid_rectangles(m, n) - target) < abs(best_score - target):
