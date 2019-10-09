@@ -21,4 +21,5 @@ def sum_amicable(m):
             s += i + a
     return s
 
+
 print(sum_amicable(10000))
