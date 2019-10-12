@@ -13,6 +13,7 @@ def max_base_exp(be_list):
     return be_list.index(max(be_list)) + 1
 
 
-base_exp_list = open('p099_base_exp.txt').read()
+with open('p099_base_exp.txt') as f:
+    base_exp_list = f.read()
 base_exp_list = base_exp_list.split('\n')
 print(max_base_exp(base_exp_list))
