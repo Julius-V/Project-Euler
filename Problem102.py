@@ -20,7 +20,8 @@ def sum_origin_triangles(tris):
     return sum([is_origin_in(tri) for tri in tris])
 
 
-triangles = open('p102_triangles.txt').read()
+with open('p102_triangles.txt') as f:
+    triangles = f.read()
 triangles = triangles.split('\n')
 triangles.pop(len(triangles) - 1)
 print(sum_origin_triangles(triangles))
