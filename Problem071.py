@@ -7,7 +7,7 @@ def largest_fraction(j, m, k):
     best_b = 1
     for d in range(1, k + 1):
         for n in range(floor(best_a / best_b * d), ceil(j * d)):
-            if n / d > best_a / best_b and n / d < j:
+            if (n / d) > (best_a / best_b) and n / d < j:
                 best_a = n
                 best_b = d
     return [best_a, best_b]
